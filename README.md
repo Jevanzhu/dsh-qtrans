@@ -88,3 +88,7 @@ node plugin/test/core.test.js <真实DSH home> <会话id>
 | `plugin/tools/workspace-tool.js sessions <路径>` | 列出某个项目下的会话 id（读 header.cwd，不看登记表） |
 | `plugin/tools/workspace-tool.js drop <路径> [--apply]` | 删掉指向不存在目录、且已经空了的旧工作区登记 |
 
+## 许可证
+
+MIT，见 [LICENSE](LICENSE)。`.agents/skills/` 与 `scripts/harness/` 是同作者技能包 `dsh-project-harness` 的随仓副本，同样以 MIT 分发。
+
