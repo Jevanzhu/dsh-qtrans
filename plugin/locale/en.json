@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DSH Quantum Transition",
+    "description": "Move DSH configuration and sessions to another machine: an import rebinds the session to the current project, configuration travels over WebDAV."
+  }
+}

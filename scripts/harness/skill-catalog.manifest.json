@@ -1,0 +1,6 @@
+{
+  "roots": [
+    ".agents/skills"
+  ],
+  "maxDescriptionLength": 500
+}

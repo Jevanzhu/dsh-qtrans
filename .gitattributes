@@ -1,0 +1,17 @@
+# 行尾统一为 LF：本仓要在 Windows 与 macOS 之间同步，
+# 而 .agents/notes/归档 的门禁按内容字节做哈希——行尾漂移会让同一份文件在两边哈希不同。
+* text=auto eol=lf
+
+# 二进制：不参与文本归一
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.zip binary
+*.zst binary
+*.woff binary
+*.woff2 binary
+
+# Windows 脚本按 CRLF 走（powershell.exe 5.1 对 BOM + 行尾都敏感）；本仓当前无 .ps1
+*.ps1 text eol=crlf

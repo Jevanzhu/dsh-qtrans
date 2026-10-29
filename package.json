@@ -1,0 +1,14 @@
+{
+  "name": "dsh-qtrans-workspace",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "check": "node scripts/harness/run-gates.ts text",
+    "check:quick": "node scripts/harness/run-gates.ts doc-quick",
+    "check:notes": "node scripts/harness/run-gates.ts agent-notes",
+    "check:all": "node scripts/harness/run-gates.ts check-all"
+  }
+}

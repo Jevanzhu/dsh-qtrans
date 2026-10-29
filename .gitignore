@@ -1,0 +1,45 @@
+# 依赖与构建产物（本仓当前无构建步骤，预留）
+node_modules/
+.pnpm-store/
+coverage/
+.nyc_output/
+dist/
+build/
+
+# 本机运行数据：插件的设置、导出、备份都应落在用户主目录（~/.dsh-qtrans），
+# 若有人在仓内跑脚本，这些目录不能被提交
+.dsh-qtrans/
+.dsh-port/
+.dsh-shuttle/
+out/
+*.dshsess.zip
+
+# 密钥与凭据：密码只存环境变量名，任何情况下都不进仓库
+.env
+.env.*
+.credentials.yaml
+*.local.json
+secrets/
+
+# 系统与编辑器
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.stackdump
+.idea/
+.vscode/
+*.swp
+
+# 日志与临时文件
+*.log
+npm-debug.log*
+*.tmp
+*.bak
+*~
+
+# 以下内容是随仓分发的「第三方副本」，必须提交，不要加进忽略：
+#   .agents/skills/**            项目技能包
+#   scripts/harness/**           门禁校验器副本（任何 clone 都要能独立跑门禁）
+#   scripts/harness/baseline.json 债务台账是棘轮，只允许变小，删了就等于清空债务
